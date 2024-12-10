@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\susib\\source\\repos\\SusiMachine\\",
+  "WorkspaceRootPath": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\source\\repos\\SusiMachine\\SusiMachine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\test.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\test.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\test.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\test.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,13 +28,39 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\susib\\source\\repos\\SusiMachine\\SusiMachine\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\main.cpp",
               "RelativeDocumentMoniker": "SusiMachine\\main.cpp",
-              "ToolTip": "C:\\Users\\susib\\source\\repos\\SusiMachine\\SusiMachine\\main.cpp",
-              "RelativeToolTip": "SusiMachine\\main.cpp",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGIAAABJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\main.cpp*",
+              "RelativeToolTip": "SusiMachine\\main.cpp*",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAIwL0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-09T13:51:31.684Z",
+              "WhenOpened": "2024-12-10T15:36:56.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "test.frag",
+              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\test.frag",
+              "RelativeDocumentMoniker": "SusiMachine\\test.frag",
+              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\test.frag",
+              "RelativeToolTip": "SusiMachine\\test.frag",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-10T15:22:12.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "test.vert",
+              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\test.vert",
+              "RelativeDocumentMoniker": "SusiMachine\\test.vert",
+              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\test.vert",
+              "RelativeToolTip": "SusiMachine\\test.vert",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-10T15:21:25.73Z",
               "EditorCaption": ""
             }
           ]
