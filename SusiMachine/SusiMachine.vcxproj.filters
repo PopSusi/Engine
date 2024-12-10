@@ -13,7 +13,7 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\TestShaders">
+    <Filter Include="Resource Files\TestShaders">
       <UniqueIdentifier>{e5e2724f-028c-49ab-85cb-ffe0c33bd0bb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -24,13 +24,27 @@
     <ClCompile Include="..\..\..\..\..\..\lib\Glad\src\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="test.vert">
-      <Filter>Source Files\TestShaders</Filter>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shaders\test.frag">
+      <Filter>Resource Files\TestShaders</Filter>
     </None>
-    <None Include="test.frag">
-      <Filter>Source Files\TestShaders</Filter>
+    <None Include="Resources\Shaders\test.vert">
+      <Filter>Resource Files\TestShaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\testFrag.frag">
+      <Filter>Resource Files\TestShaders</Filter>
+    </None>
+    <None Include="Resources\Shaders\testVert.vert">
+      <Filter>Resource Files\TestShaders</Filter>
     </None>
   </ItemGroup>
 </Project>

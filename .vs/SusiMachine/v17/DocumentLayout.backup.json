@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Resources\\Shaders\\testFrag.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\Resources\\Shaders\\testFrag.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Resources\\Shaders\\testVert.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\Resources\\Shaders\\testVert.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Resources\\Shaders\\test.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\Resources\\Shaders\\test.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\test.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\test.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\test.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\test.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\main.cpp",
-              "RelativeDocumentMoniker": "SusiMachine\\main.cpp",
-              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\main.cpp*",
-              "RelativeToolTip": "SusiMachine\\main.cpp*",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAIwL0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-10T15:36:56.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "test.frag",
-              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\test.frag",
-              "RelativeDocumentMoniker": "SusiMachine\\test.frag",
-              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\test.frag",
-              "RelativeToolTip": "SusiMachine\\test.frag",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "Title": "test.vert",
+              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Resources\\Shaders\\test.vert",
+              "RelativeDocumentMoniker": "SusiMachine\\Resources\\Shaders\\test.vert",
+              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Resources\\Shaders\\test.vert",
+              "RelativeToolTip": "SusiMachine\\Resources\\Shaders\\test.vert",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-10T15:22:12.738Z",
+              "WhenOpened": "2024-12-10T17:36:09.837Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "test.vert",
-              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\test.vert",
-              "RelativeDocumentMoniker": "SusiMachine\\test.vert",
-              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\test.vert",
-              "RelativeToolTip": "SusiMachine\\test.vert",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
+              "Title": "testVert.vert",
+              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Resources\\Shaders\\testVert.vert",
+              "RelativeDocumentMoniker": "SusiMachine\\Resources\\Shaders\\testVert.vert",
+              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Resources\\Shaders\\testVert.vert",
+              "RelativeToolTip": "SusiMachine\\Resources\\Shaders\\testVert.vert",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-10T15:21:25.73Z",
+              "WhenOpened": "2024-12-10T17:51:25.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "testFrag.frag",
+              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Resources\\Shaders\\testFrag.frag",
+              "RelativeDocumentMoniker": "SusiMachine\\Resources\\Shaders\\testFrag.frag",
+              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Resources\\Shaders\\testFrag.frag",
+              "RelativeToolTip": "SusiMachine\\Resources\\Shaders\\testFrag.frag",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-10T17:51:25.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Shader.h",
+              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Shader.h",
+              "RelativeDocumentMoniker": "SusiMachine\\Shader.h",
+              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Shader.h",
+              "RelativeToolTip": "SusiMachine\\Shader.h",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-10T15:46:48.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\main.cpp",
+              "RelativeDocumentMoniker": "SusiMachine\\main.cpp",
+              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\main.cpp",
+              "RelativeToolTip": "SusiMachine\\main.cpp",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-10T15:36:56.822Z",
               "EditorCaption": ""
             }
           ]
