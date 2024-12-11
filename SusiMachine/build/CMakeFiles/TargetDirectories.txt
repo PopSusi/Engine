@@ -1,0 +1,8 @@
+C:/Users/susib/Documents/GitHub/Engine/SusiMachine/build/CMakeFiles/SusisMachine.dir
+C:/Users/susib/Documents/GitHub/Engine/SusiMachine/build/CMakeFiles/Experimental.dir
+C:/Users/susib/Documents/GitHub/Engine/SusiMachine/build/CMakeFiles/Nightly.dir
+C:/Users/susib/Documents/GitHub/Engine/SusiMachine/build/CMakeFiles/Continuous.dir
+C:/Users/susib/Documents/GitHub/Engine/SusiMachine/build/CMakeFiles/NightlyMemoryCheck.dir
+C:/Users/susib/Documents/GitHub/Engine/SusiMachine/build/CMakeFiles/RUN_TESTS.dir
+C:/Users/susib/Documents/GitHub/Engine/SusiMachine/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/susib/Documents/GitHub/Engine/SusiMachine/build/CMakeFiles/ZERO_CHECK.dir

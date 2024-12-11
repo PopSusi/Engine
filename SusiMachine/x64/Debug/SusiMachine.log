@@ -1,1 +1,7 @@
-﻿  SusiMachine.vcxproj -> C:\Users\susib\Documents\GitHub\Engine\x64\Debug\SusiMachine.exe
+﻿  main.cpp
+C:\Users\susib\Documents\GitHub\Engine\SusiMachine\include\Shader.h(83,61): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(105,38): error C2065: 'texture': undeclared identifier
+  Texture.cpp
+  Generating Code...
