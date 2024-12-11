@@ -4,6 +4,7 @@
 #include <Shader.h>
 #include <stb_image.h>
 #include <iostream>
+#include <Texture.h>
 
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -93,8 +94,8 @@ int main()
     // ---- render loop ---- //
 
     ourShader.use();
-    Machine::Texture texture =
-    texture::bind();
+    Machine::Texture texture("Resources/Textures/container.jpg", GL_TEXTURE_2D);
+    texture.Bind();
     while (!glfwWindowShouldClose(window))
     {
 

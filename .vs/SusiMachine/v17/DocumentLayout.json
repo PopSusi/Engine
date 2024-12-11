@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\include\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\include\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\src\\Texture.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\include\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\include\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\include\\Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\include\\Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|solutionrelative:SusiMachine\\src\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38D73502-319F-4122-B53A-24F0C0971E10}|SusiMachine\\SusiMachine.vcxproj|C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\notsure.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,45 +42,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\main.cpp",
-              "RelativeDocumentMoniker": "SusiMachine\\src\\main.cpp",
-              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\main.cpp",
-              "RelativeToolTip": "SusiMachine\\src\\main.cpp",
-              "ViewState": "AgIAAFMAAAAAAAAAAIA4wGcAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Shader.cpp",
+              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\Shader.cpp",
+              "RelativeDocumentMoniker": "SusiMachine\\src\\Shader.cpp",
+              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\Shader.cpp",
+              "RelativeToolTip": "SusiMachine\\src\\Shader.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-10T22:29:40.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Texture.h",
-              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\include\\Texture.h",
-              "RelativeDocumentMoniker": "SusiMachine\\include\\Texture.h",
-              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\include\\Texture.h",
-              "RelativeToolTip": "SusiMachine\\include\\Texture.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-11T05:08:00.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Texture.cpp",
-              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\Texture.cpp",
-              "RelativeDocumentMoniker": "SusiMachine\\src\\Texture.cpp",
-              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\Texture.cpp",
-              "RelativeToolTip": "SusiMachine\\src\\Texture.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-11T04:51:56.479Z",
+              "WhenOpened": "2024-12-11T16:49:35.788Z",
               "EditorCaption": ""
             },
             {
@@ -87,14 +65,53 @@
               "RelativeDocumentMoniker": "SusiMachine\\include\\Shader.h",
               "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\include\\Shader.h",
               "RelativeToolTip": "SusiMachine\\include\\Shader.h",
-              "ViewState": "AgIAAC4AAAAAAAAAAIA4wFIAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-10T23:29:50.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "Texture.cpp",
+              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\Texture.cpp",
+              "RelativeDocumentMoniker": "SusiMachine\\src\\Texture.cpp",
+              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\Texture.cpp",
+              "RelativeToolTip": "SusiMachine\\src\\Texture.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-11T04:51:56.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Texture.h",
+              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\include\\Texture.h",
+              "RelativeDocumentMoniker": "SusiMachine\\include\\Texture.h",
+              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\include\\Texture.h",
+              "RelativeToolTip": "SusiMachine\\include\\Texture.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-11T05:08:00.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\main.cpp",
+              "RelativeDocumentMoniker": "SusiMachine\\src\\main.cpp",
+              "ToolTip": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\main.cpp",
+              "RelativeToolTip": "SusiMachine\\src\\main.cpp",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGAAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-10T22:29:40.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "notsure.cpp",
               "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\src\\notsure.cpp",
               "RelativeDocumentMoniker": "SusiMachine\\src\\notsure.cpp",
@@ -107,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "testVert.vert",
               "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Resources\\Shaders\\testVert.vert",
               "RelativeDocumentMoniker": "SusiMachine\\Resources\\Shaders\\testVert.vert",
@@ -115,12 +132,11 @@
               "RelativeToolTip": "SusiMachine\\Resources\\Shaders\\testVert.vert",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-10T17:51:25.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T17:51:25.921Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "testFrag.frag",
               "DocumentMoniker": "C:\\Users\\susib\\Documents\\GitHub\\Engine\\SusiMachine\\Resources\\Shaders\\testFrag.frag",
               "RelativeDocumentMoniker": "SusiMachine\\Resources\\Shaders\\testFrag.frag",
@@ -128,8 +144,7 @@
               "RelativeToolTip": "SusiMachine\\Resources\\Shaders\\testFrag.frag",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-10T17:51:25.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T17:51:25.384Z"
             }
           ]
         }

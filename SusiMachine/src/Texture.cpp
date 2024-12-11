@@ -3,15 +3,10 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
+#include <Texture.h>
+
 namespace Machine {
-	class Texture {
-	private:
-		GLuint id;
-		int size;
-
-	public:
-
-		Texture(const char* path, GLenum type) {
+		Texture::Texture(const char* path, GLenum type) {
             int nrChannels;
             unsigned char* data = stbi_load("Resources/Textures/container.jpg", &size, &size, &nrChannels, 0);
             glGenTextures(1, &this->id);
@@ -37,12 +32,11 @@ namespace Machine {
             stbi_image_free(data);
 		}
 
-        ~Texture() {
+        Texture::~Texture() {
             glDeleteTextures(1, &this->id);
         }
 
-        void Bind() {
+        void Texture::Bind() {
             glBindTexture(GL_TEXTURE_2D, id);
         }
 	};
-}
