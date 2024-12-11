@@ -33,6 +33,9 @@
     <ClCompile Include="src\Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Shader.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Object.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -60,10 +66,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Resources\Textures\SFR.jpg">
+    <Image Include="Resources\Textures\SFR.png">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Resources\Textures\container.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Textures\TEST.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

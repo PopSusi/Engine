@@ -6,9 +6,14 @@
 #include <Texture.h>
 
 namespace Machine {
-		Texture::Texture(const char* path, GLenum type) {
+		Texture::Texture(const char* path, GLenum type, GLint texture_Unit, bool flip) {
             int nrChannels;
-            unsigned char* data = stbi_load("Resources/Textures/container.jpg", &size, &size, &nrChannels, 0);
+            typeof = type;
+            textureUnit = texture_Unit;
+
+            if(flip) stbi_set_flip_vertically_on_load(true);
+
+            unsigned char* data = stbi_load(path, &size, &size, &nrChannels, 0);
             glGenTextures(1, &this->id);
             glBindTexture(type, this->id); // all upcoming GL_TEXTURE_2D operations now have effect on this texture object
 
@@ -22,12 +27,23 @@ namespace Machine {
             // The FileSystem::getPath(...) is part of the GitHub repository so we can find files on any IDE/platform; replace it with your own image path.
             if (data)
             {
-                glTexImage2D(type, 0, GL_RGB, size, size, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+                GLint channelType;
+                if (nrChannels == 3) {
+                    channelType = GL_RGB;
+                }
+                else if (nrChannels == 4) {
+                    channelType = GL_RGBA;
+                }
+                else {
+                    std::cout << "Invalid nrChannels of: " + nrChannels << std::endl;
+                }
+                glTexImage2D(type, 0, channelType, size, size, 0, channelType, GL_UNSIGNED_BYTE, data);
                 glGenerateMipmap(type);
+                std::cout << "Loaded texture from: " << std::endl;
             }
             else
             {
-                std::cout << "Failed to load texture" << std::endl;
+                std::cout << "Failed to load texture from: " << std::endl;
             }
             stbi_image_free(data);
 		}
@@ -37,6 +53,7 @@ namespace Machine {
         }
 
         void Texture::Bind() {
-            glBindTexture(GL_TEXTURE_2D, id);
+            glActiveTexture(GL_TEXTURE0 + this->textureUnit);
+            glBindTexture(typeof, this->id);
         }
 	};

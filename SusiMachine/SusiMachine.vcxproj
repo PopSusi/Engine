@@ -135,10 +135,12 @@
     <ClCompile Include="..\..\..\..\..\..\lib\Glad\src\glad.c" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\notsure.cpp" />
+    <ClCompile Include="src\Object.cpp" />
     <ClCompile Include="src\Shader.cpp" />
     <ClCompile Include="src\Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Object.h" />
     <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\stb_image.h" />
     <ClInclude Include="include\Texture.h" />
@@ -151,7 +153,8 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\Textures\container.jpg" />
-    <Image Include="Resources\Textures\SFR.jpg" />
+    <Image Include="Resources\Textures\SFR.png" />
+    <Image Include="Resources\Textures\TEST.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
