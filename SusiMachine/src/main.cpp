@@ -8,20 +8,27 @@
 
 #include <Texture.h>
 #include <Object.h>
+#include <Camera.h>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+#define GLM_SWIZZLE
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
+void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
+namespace Machine {
+    float deltaTime = 0.0f;
+    float lastFrame = 0.0f;
+};
 Machine::Object objects[10];
-
+Machine::Camera cameraObj;
 int main()
 {
     // glfw: initialize and configure
@@ -46,6 +53,8 @@ int main()
     }
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    glfwSetCursorPosCallback(window, mouse_callback);
 
     // glad: load all OpenGL function pointers
     // ---------------------------------------
@@ -54,7 +63,7 @@ int main()
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;
     }
-
+    glfwSwapInterval(0);
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
 
@@ -65,11 +74,14 @@ int main()
     Machine::Texture texture1("Resources/Textures/SFR.png", GL_TEXTURE_2D, 1, true);
     texture1.Bind();
 
+    cameraObj.~Camera();
+    cameraObj = Machine::Camera(glm::vec4(0.0f, 0.0f, -10.0f, 1.0f));
+
     for (int i = 0; i < 10; i++) {
         objects[i].~Object();
         glm::vec3 randPos((-3 + (rand() % (3 - -3 + 1))), (-3 + (rand() % (3 - -3 + 1))), (-3 + (rand() % (3 - -3 + 1))));
         std::cout << randPos.x << std::endl;
-        objects[i] = Machine::Object(glm::vec4(randPos, 1.0f), &texture1);
+        objects[i] = Machine::Object(glm::vec4(randPos, 1.0f));
     }
 
     unsigned int VBO, VAO, EBO;
@@ -106,20 +118,23 @@ int main()
 
     while (!glfwWindowShouldClose(window))
     {
+        float currentFrame = static_cast<float>(glfwGetTime());
+        Machine::deltaTime = currentFrame - Machine::lastFrame;
+        Machine::lastFrame = currentFrame;
 
         processInput(window);
 
+        glEnable(GL_DEPTH_TEST);
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         texture.Bind();
         texture1.Bind();
 
 
-        glm::mat4 view = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
+        glm::mat4 view = cameraObj.GetViewMatrix(); // make sure to initialize matrix to identity matrix first
         glm::mat4 projection = glm::mat4(1.0f);
         projection = glm::perspective(glm::radians(45.0f), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
-        view = glm::translate(view, glm::vec3(0.0f, 0.0f, -10.0f));
         // pass transformation matrices to the shader
         ourShader.setMat4("projection", projection); // note: currently we set the projection matrix each frame, but since the projection matrix rarely changes it's often best practice to set it outside the main loop only once.
         ourShader.setMat4("view", view);
@@ -140,7 +155,6 @@ int main()
         //glBindVertexArray(VAO);
         //glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         //glDrawArrays(GL_TRIANGLES, 0, 36);
-
         // GLFW Swap
         glfwSwapBuffers(window);
         glfwPollEvents();
@@ -159,6 +173,19 @@ void processInput(GLFWwindow* window)
 {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
+
+    glm::vec3 inputs(0.0f, 0.0f, 0.0f);
+    const float cameraSpeed = 0.05f; // adjust accordingly
+    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+        inputs += cameraObj.getForward() * cameraSpeed;
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+        inputs -= cameraObj.getForward() * cameraSpeed;
+    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+        inputs += cameraObj.getRight() * cameraSpeed;
+    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+        inputs -= cameraObj.getRight() * cameraSpeed;
+    inputs = inputs * Machine::deltaTime * 100.0f;
+    cameraObj.Translate(inputs);
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes
@@ -168,4 +195,38 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
     // make sure the viewport matches the new window dimensions; note that width and 
     // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
+}
+
+bool firstMouse = true;
+
+void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
+
+    float lastX;
+    float lastY;
+    if (firstMouse)
+    {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+
+    lastX = 400;
+    lastY = 300;
+    float xoffset = xpos - lastX;
+    float yoffset = lastY - ypos; // reversed since y-coordinates range from bottom to top
+    lastX = xpos;
+    lastY = ypos;
+
+    const float sensitivity = 0.01f;
+    xoffset *= -sensitivity;
+    yoffset *= sensitivity;
+
+    glm::vec2 input(xoffset, yoffset);
+    float pitch = cameraObj.getWorldRotation().y;
+    if (pitch > 89.0f)
+        input.y = 0;
+    if (pitch < -89.0f)
+        input.y = 0;
+
+    cameraObj.Rotate(glm::vec3(input.x, input.y, 0.0f));
 }
