@@ -21,8 +21,8 @@ namespace Machine {
 			vec3 cameraTarget = vec3(0.0f, 0.0f, 0.0f);
 			InitializeDirections();
 		}
-		Camera(vec4 worldTrans) {
-			this->worldTrans = worldTrans;
+		Camera(vec3 Position) {
+			this->worldPos = Position;
 			InitializeDirections();
 		}
 		inline vec3 getForward() { return forwardVec; };

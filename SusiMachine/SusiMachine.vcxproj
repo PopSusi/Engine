@@ -148,6 +148,8 @@
     <ClInclude Include="include\Texture.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Shaders\lightTest.frag" />
+    <None Include="Resources\Shaders\lightTest.vert" />
     <None Include="Resources\Shaders\test.frag" />
     <None Include="Resources\Shaders\test.vert" />
     <None Include="Resources\Shaders\testFrag.frag" />

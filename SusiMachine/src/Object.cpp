@@ -6,12 +6,12 @@ using namespace Machine;
 	Object::Object(){
 		//std::cout << "Empty declare" << std::endl;
 	}
-	Object::Object(glm::vec4 worldTrans) {
+	Object::Object(glm::vec3 Position) {
 		//std::cout << "Full declare" << std::endl;
-		this->worldTrans = worldTrans;
+		this->worldPos = Position;
 	}
 	void Object::Translate(glm::vec3 deltaTranslation) {
-		this->worldTrans += glm::vec4(deltaTranslation, 0.0f);
+		this->worldPos += glm::vec3(deltaTranslation);
 		this->worldPos += glm::vec3(deltaTranslation.x, deltaTranslation.y, deltaTranslation.z);
 		//std::cout << translation.x << std::endl;
 		//std::cout << worldTrans.x << std::endl;

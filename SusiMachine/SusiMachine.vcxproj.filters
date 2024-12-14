@@ -70,6 +70,8 @@
     <None Include="Resources\Shaders\testVert.vert">
       <Filter>Resource Files\TestShaders</Filter>
     </None>
+    <None Include="Resources\Shaders\lightTest.frag" />
+    <None Include="Resources\Shaders\lightTest.vert" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\Textures\SFR.png">
