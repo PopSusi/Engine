@@ -1,11 +1,5 @@
-#include"string"
-#include"sstream"
-#include"fstream"
-#include"iostream"
-#include"glad/glad.h"	
+#include <Shader.hpp>
 #include"GLFW/glfw3.h"
-
-#include <Shader.h>
 #include <glm/gtc/type_ptr.hpp>
 
     // the program ID

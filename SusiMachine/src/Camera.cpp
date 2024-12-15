@@ -1,5 +1,5 @@
 
-#include <Camera.h>
+#include <Camera.hpp>
 using namespace glm;
 
 // Default camera values

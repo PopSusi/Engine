@@ -1,13 +1,12 @@
 ﻿  main.cpp
-C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(17,9): warning C4005: 'GLM_SWIZZLE': macro redefinition
+C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(19,9): warning C4005: 'GLM_SWIZZLE': macro redefinition
       C:\lib\glm\glm\detail\setup.hpp(599,10):
       see previous definition of 'GLM_SWIZZLE'
   
-C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(227,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(292,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(293,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(299,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(300,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(301,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(302,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(302,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(303,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(309,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(310,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(311,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\susib\Documents\GitHub\Engine\SusiMachine\src\main.cpp(312,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   SusiMachine.vcxproj -> C:\Users\susib\Documents\GitHub\Engine\x64\Debug\SusiMachine.exe

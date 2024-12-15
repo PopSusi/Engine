@@ -1,14 +1,16 @@
 //#include"SDL3/SDL.h"
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <Shader.h>
+#include <Shader.hpp>
 #include <stb_image.h>
 #include <iostream>
 
 
-#include <Texture.h>
-#include <Object.h>
-#include <Camera.h>
+#include <Texture.hpp>
+#include <Object.hpp>
+#include <Camera.hpp>
+#include <Material.hpp>
+#include <Light.hpp>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -20,8 +22,8 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 
-const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;
+const unsigned int SCR_WIDTH = 1280;
+const unsigned int SCR_HEIGHT = 720;
 
 float vertices[288] = {
         -0.5f, -0.5f, -0.5f,  0.0f, 0.0f, 0.0f,  0.0f, -1.0f,
@@ -175,6 +177,13 @@ int main()
     ourShader.setInt("texture2", 1);
     ourShader.setVec3("lightColor", 1.0f, 0.5f, 0.31f);
     ourShader.setVec3("lightPos", lightCube.getWorldPosition());
+    ourShader.setVec3("viewPos", cameraObj.getWorldPosition());
+
+    Machine::Material mat(glm::vec3(1.0f, 0.5f, 0.31f), glm::vec3(1.0f, 0.5f, 0.31f), glm::vec3(0.5f, 0.5f, 0.5f), 32.0f);
+    mat.Use(ourShader);
+
+    Machine::Light light;
+    light.Use(ourShader);
     while (!glfwWindowShouldClose(window))
     {
         float currentFrame = static_cast<float>(glfwGetTime());
@@ -216,6 +225,7 @@ int main()
         ourShader.use();
         ourShader.setMat4("projection", projection); // note: currently we set the projection matrix each frame, but since the projection matrix rarely changes it's often best practice to set it outside the main loop only once.
         ourShader.setMat4("view", view);
+        
         //ourShader.setFloat("ambientStrength", strength);
 
         glBindVertexArray(cubeVAO);
@@ -224,8 +234,8 @@ int main()
             // calculate the model matrix for each object and pass it to shader before drawing
             model = glm::mat4(1.0f);
             model = glm::translate(model, objects[i].getWorldPosition());
-            float angle = 20.0f * (i + 1)* glfwGetTime();
-            model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+            //float angle = 20.0f * (i + 1)* glfwGetTime();
+            //model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
             ourShader.setMat4("model", model);
 
             glDrawArrays(GL_TRIANGLES, 0, 36);

@@ -3,7 +3,7 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
-#include <Texture.h>
+#include <Texture.hpp>
 
 namespace Machine {
 		Texture::Texture(const char* path, GLenum type, GLint texture_Unit, bool flip) {
