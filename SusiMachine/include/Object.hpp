@@ -15,7 +15,6 @@ namespace Machine {
         glm::vec3 forwardVec;
         glm::vec3 upVec;
         glm::vec3 rightVec;
-		Texture* texture;
         void InitializeDirections();
 	public:
         static const float vertices[288];

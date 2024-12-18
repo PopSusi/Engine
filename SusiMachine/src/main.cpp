@@ -114,11 +114,8 @@ int main()
     // ------------------------------------------------------------------
 
     Shader ourShader("Resources/Shaders/testVert.vert", "Resources/Shaders/testFrag.frag");
-    Machine::Texture texture("Resources/Textures/container.jpg", GL_TEXTURE_2D, 0, false);
-    texture.Bind();
-
-    Machine::Texture texture1("Resources/Textures/SFR.png", GL_TEXTURE_2D, 1, true);
-    texture1.Bind();
+    Machine::Texture texture1("Resources/Textures/container2.png", GL_TEXTURE_2D, 0, true);
+    Machine::Texture texturespec("Resources/Textures/container2_specular.png", GL_TEXTURE_2D, 1, true);
 
     cameraObj.~Camera();
     cameraObj = Machine::Camera(glm::vec4(0.0f, 0.0f, -10.0f, 1.0f));
@@ -143,8 +140,6 @@ int main()
 
     // uncomment this call to draw in wireframe polygons.
     //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-
-    Machine::Object lightCube(glm::vec3(0.0f, 0.0f, 0.0f));
 
     unsigned int lightVAO;
     glGenVertexArrays(1, &lightVAO);
@@ -173,17 +168,15 @@ int main()
 
     ourShader.use();
 
-    ourShader.setInt("texture1", 0);
-    ourShader.setInt("texture2", 1);
-    ourShader.setVec3("lightColor", 1.0f, 0.5f, 0.31f);
-    ourShader.setVec3("lightPos", lightCube.getWorldPosition());
-    ourShader.setVec3("viewPos", cameraObj.getWorldPosition());
 
-    Machine::Material mat(glm::vec3(1.0f, 0.5f, 0.31f), glm::vec3(1.0f, 0.5f, 0.31f), glm::vec3(0.5f, 0.5f, 0.5f), 32.0f);
+    Machine::Material mat(&texture1, &texturespec, 32.0f);
     mat.Use(ourShader);
 
-    Machine::Light light;
+    Machine::Light light(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.2f, 0.2f, 0.2f), glm::vec3(0.5f, 0.5f, 0.5f), glm::vec3(1.0f, 1.0f, 1.0f));
     light.Use(ourShader);
+
+    ourShader.setVec3("viewPos", cameraObj.getWorldPosition());
+
     while (!glfwWindowShouldClose(window))
     {
         float currentFrame = static_cast<float>(glfwGetTime());
@@ -195,10 +188,6 @@ int main()
         glEnable(GL_DEPTH_TEST);
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-        texture.Bind();
-        texture1.Bind();
-
 
         glm::mat4 view = cameraObj.GetViewMatrix(); // make sure to initialize matrix to identity matrix first
         glm::mat4 projection = glm::mat4(1.0f);
@@ -213,7 +202,7 @@ int main()
         lightShader.setMat4("projection", projection); // note: currently we set the projection matrix each frame, but since the projection matrix rarely changes it's often best practice to set it outside the main loop only once.
         lightShader.setMat4("view", view);
         model = glm::mat4(1.0f);
-        model = glm::translate(model, lightCube.getWorldPosition());
+        model = glm::translate(model, light.getWorldPosition());
         model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
         lightShader.setMat4("model", model);
         //lightShader.setFloat("ambientStrength", strength);
@@ -225,7 +214,7 @@ int main()
         ourShader.use();
         ourShader.setMat4("projection", projection); // note: currently we set the projection matrix each frame, but since the projection matrix rarely changes it's often best practice to set it outside the main loop only once.
         ourShader.setMat4("view", view);
-        
+        ourShader.setVec3("viewPos", cameraObj.getWorldPosition());
         //ourShader.setFloat("ambientStrength", strength);
 
         glBindVertexArray(cubeVAO);

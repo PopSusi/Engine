@@ -18,6 +18,7 @@ namespace Machine {
 
 		~Texture();
 		inline GLuint getID() const { return this->id; }
+		inline GLuint getUnit() const { return this->textureUnit; }
 	};
 }
 #endif
