@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\susib\Documents\GitHub\SusiMachine\build\CMakeFiles\d7d3dcaf0a6034eabfe5613aa2228531\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{360D404E-A6DA-3B0A-A2ED-1E82F6AE3AA0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

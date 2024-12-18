@@ -288,17 +288,17 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
     float lastY;
     if (firstMouse)
     {
-        lastX = xpos;
-        lastY = ypos;
+        lastX = (float) xpos;
+        lastY = (float) ypos;
         firstMouse = false;
     }
 
     lastX = 400;
     lastY = 300;
-    float xoffset = xpos - lastX;
-    float yoffset = lastY - ypos; // reversed since y-coordinates range from bottom to top
-    lastX = xpos;
-    lastY = ypos;
+    float xoffset = (float) xpos - lastX;
+    float yoffset = (float) lastY - ypos; // reversed since y-coordinates range from bottom to top
+    lastX = (float) xpos;
+    lastY = (float) ypos;
 
     const float sensitivity = 0.01f;
     xoffset *= -sensitivity;
