@@ -8,7 +8,7 @@
 namespace Machine {
 		Texture::Texture(const char* path, GLenum type, GLint texture_Unit, bool flip) {
             int nrChannels;
-            typeof = type;
+            myType = type;
             textureUnit = texture_Unit;
 
             if(flip) stbi_set_flip_vertically_on_load(true);
@@ -35,7 +35,8 @@ namespace Machine {
                     channelType = GL_RGBA;
                 }
                 else {
-                    std::cout << "Invalid nrChannels of: " + nrChannels << std::endl;
+                    std::cout << "Invalid nrChannels of: ";
+                    std::cout << nrChannels << '\n';
                 }
                 glTexImage2D(type, 0, channelType, size, size, 0, channelType, GL_UNSIGNED_BYTE, data);
                 glGenerateMipmap(type);
@@ -54,6 +55,6 @@ namespace Machine {
 
         void Texture::Bind() {
             glActiveTexture(GL_TEXTURE0 + this->textureUnit);
-            glBindTexture(typeof, this->id);
+            glBindTexture(myType, this->id);
         }
 	};

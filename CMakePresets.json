@@ -1,0 +1,36 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 19
+    },
+    "configurePresets": [
+      {
+        "name": "macos",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/build-macos",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_CXX_COMPILER": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+        }
+      },
+      {
+        "name": "windows",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/build-windows",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_CXX_COMPILER": "C:/path/to/msvc/cl.exe"
+        }
+      },
+      {
+        "name": "linux",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/build-linux",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_CXX_COMPILER": "/usr/bin/g++"
+        }
+      }
+    ]
+  }

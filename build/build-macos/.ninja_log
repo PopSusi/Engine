@@ -1,0 +1,12 @@
+# ninja log v6
+11	136	1734627158539621931	CMakeFiles/SusiMachine.dir/lib/Glad/src/glad.c.o	9b695c2c06cbe41e
+13	650	1734627158541305959	CMakeFiles/SusiMachine.dir/src/Mesh.cpp.o	bfc63d754527af3a
+16	389	1734627158544320728	CMakeFiles/SusiMachine.dir/src/notsure.cpp.o	81a2754ec171f87c
+14	690	1734627158542409909	CMakeFiles/SusiMachine.dir/src/Shader.cpp.o	7346fc5a30906573
+15	526	1734627158543057113	CMakeFiles/SusiMachine.dir/src/Texture.cpp.o	cbe89f5a7542e6fe
+12	590	1734627158540203968	CMakeFiles/SusiMachine.dir/src/Camera.cpp.o	6b3202251f1a01b4
+14	533	1734627158541705040	CMakeFiles/SusiMachine.dir/src/Object.cpp.o	377532a0df2f77d3
+12	618	1734627158540454383	CMakeFiles/SusiMachine.dir/src/Light.cpp.o	ce375cc85e40e2f2
+13	650	1734627158540686047	CMakeFiles/SusiMachine.dir/src/Material.cpp.o	56d26147248318ec
+10	383	1734627203786522174	CMakeFiles/SusiMachine.dir/src/main.cpp.o	8b4a2059600b3b8
+6	209	1734627349232343314	SusiMachine	6f9246bc5a1fcf10

@@ -1,0 +1,3 @@
+/Users/Susi/Documents/Engine/build/build-macos/CMakeFiles/SusiMachine.dir
+/Users/Susi/Documents/Engine/build/build-macos/CMakeFiles/edit_cache.dir
+/Users/Susi/Documents/Engine/build/build-macos/CMakeFiles/rebuild_cache.dir

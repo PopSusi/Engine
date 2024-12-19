@@ -9,7 +9,7 @@ namespace Machine {
 	private:
 		GLuint id;
 		int size;
-		GLenum typeof;
+		GLenum myType;
 		GLint textureUnit;
 
 	public:
