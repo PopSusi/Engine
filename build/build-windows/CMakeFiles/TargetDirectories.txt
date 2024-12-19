@@ -1,0 +1,3 @@
+C:/Users/susib/Documents/GitHub/SusiMachine/build/build-windows/CMakeFiles/SusiMachine.dir
+C:/Users/susib/Documents/GitHub/SusiMachine/build/build-windows/CMakeFiles/ALL_BUILD.dir
+C:/Users/susib/Documents/GitHub/SusiMachine/build/build-windows/CMakeFiles/ZERO_CHECK.dir

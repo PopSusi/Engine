@@ -50,14 +50,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SusiMachine::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SusiMachine-Debug-05f6e0fb091fb173e389.json",
+					"jsonFile" : "target-SusiMachine-Debug-c978aae6544bcc16229b.json",
 					"name" : "SusiMachine",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ZERO_CHECK-Debug-459eeab3ad5dc4f5b589.json",
+					"jsonFile" : "target-ZERO_CHECK-Debug-c0c23f7e56fb13c24591.json",
 					"name" : "ZERO_CHECK",
 					"projectIndex" : 0
 				}
@@ -112,14 +112,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SusiMachine::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SusiMachine-Release-209d9513832b41362ec4.json",
+					"jsonFile" : "target-SusiMachine-Release-dd031546fd68da667cc2.json",
 					"name" : "SusiMachine",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ZERO_CHECK-Release-459eeab3ad5dc4f5b589.json",
+					"jsonFile" : "target-ZERO_CHECK-Release-c0c23f7e56fb13c24591.json",
 					"name" : "ZERO_CHECK",
 					"projectIndex" : 0
 				}
@@ -174,14 +174,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SusiMachine::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SusiMachine-MinSizeRel-7f1ab9ed99c852fc78d6.json",
+					"jsonFile" : "target-SusiMachine-MinSizeRel-35e506595551f08868de.json",
 					"name" : "SusiMachine",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-459eeab3ad5dc4f5b589.json",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-c0c23f7e56fb13c24591.json",
 					"name" : "ZERO_CHECK",
 					"projectIndex" : 0
 				}
@@ -236,14 +236,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SusiMachine::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SusiMachine-RelWithDebInfo-0c0153e3b60192f93b40.json",
+					"jsonFile" : "target-SusiMachine-RelWithDebInfo-bd8693b4861035556cad.json",
 					"name" : "SusiMachine",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-459eeab3ad5dc4f5b589.json",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-c0c23f7e56fb13c24591.json",
 					"name" : "ZERO_CHECK",
 					"projectIndex" : 0
 				}
@@ -253,7 +253,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/susib/Documents/GitHub/SusiMachine/build",
+		"build" : "C:/Users/susib/Documents/GitHub/SusiMachine/build/build-windows",
 		"source" : "C:/Users/susib/Documents/GitHub/SusiMachine"
 	},
 	"version" : 

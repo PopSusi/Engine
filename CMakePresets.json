@@ -16,7 +16,7 @@
       },
       {
         "name": "windows",
-        "generator": "Ninja",
+        "generator": "Visual Studio 17 2022",
         "binaryDir": "${sourceDir}/build/build-windows",
         "cacheVariables": {
           "CMAKE_BUILD_TYPE": "Debug",
