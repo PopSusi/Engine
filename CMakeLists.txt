@@ -42,6 +42,7 @@ include_directories(${SusiMachine_SOURCE_DIR}/lib/glm)
 if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
     include_directories(${SusiMachine_SOURCE_DIR}/lib/GLFW/include)
     include_directories(${SusiMachine_SOURCE_DIR}/lib/SDL3/include)
+    include_directories(${SusiMachine_SOURCE_DIR}/lib/assimp/5.4.3/include)
 
     target_link_libraries(SusiMachine
         ${SusiMachine_SOURCE_DIR}/lib/GLFW/lib-vc2022/glfw3.lib
@@ -51,7 +52,8 @@ if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
 elseif (CMAKE_SYSTEM_NAME STREQUAL "Darwin") # macOS
     include_directories(/opt/homebrew/Cellar/glfw/3.4/include)
     target_link_libraries(SusiMachine
-    /opt/homebrew/Cellar/glfw/3.4/lib/libglfw.3.dylib
+        /opt/homebrew/Cellar/glfw/3.4/lib/libglfw.3.dylib
+        ${SusiMachine_SOURCE_DIR}/lib/assimp/5.4.3/lib/libassimp.dylib
     )
 elseif (CMAKE_SYSTEM_NAME STREQUAL "Linux")
     target_link_libraries(SusiMachine

@@ -89,6 +89,14 @@ build CMakeFiles/SusiMachine.dir/src/Mesh.cpp.o: CXX_COMPILER__SusiMachine_unsca
   OBJECT_DIR = CMakeFiles/SusiMachine.dir
   OBJECT_FILE_DIR = CMakeFiles/SusiMachine.dir/src
 
+build CMakeFiles/SusiMachine.dir/src/Model.cpp.o: CXX_COMPILER__SusiMachine_unscanned_Debug /Users/Susi/Documents/Engine/src/Model.cpp || cmake_object_order_depends_target_SusiMachine
+  DEFINES = -DPLATFORM_MAC
+  DEP_FILE = CMakeFiles/SusiMachine.dir/src/Model.cpp.o.d
+  FLAGS = -DAPPLE -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4
+  INCLUDES = -I/Users/Susi/Documents/Engine/include -I/Users/Susi/Documents/Engine/lib/Glad/include -I/Users/Susi/Documents/Engine/lib/glm -I/opt/homebrew/Cellar/glfw/3.4/include
+  OBJECT_DIR = CMakeFiles/SusiMachine.dir
+  OBJECT_FILE_DIR = CMakeFiles/SusiMachine.dir/src
+
 build CMakeFiles/SusiMachine.dir/src/Object.cpp.o: CXX_COMPILER__SusiMachine_unscanned_Debug /Users/Susi/Documents/Engine/src/Object.cpp || cmake_object_order_depends_target_SusiMachine
   DEFINES = -DPLATFORM_MAC
   DEP_FILE = CMakeFiles/SusiMachine.dir/src/Object.cpp.o.d
@@ -137,9 +145,9 @@ build CMakeFiles/SusiMachine.dir/src/notsure.cpp.o: CXX_COMPILER__SusiMachine_un
 #############################################
 # Link the executable SusiMachine
 
-build SusiMachine: CXX_EXECUTABLE_LINKER__SusiMachine_Debug CMakeFiles/SusiMachine.dir/lib/Glad/src/glad.c.o CMakeFiles/SusiMachine.dir/src/Camera.cpp.o CMakeFiles/SusiMachine.dir/src/Light.cpp.o CMakeFiles/SusiMachine.dir/src/Material.cpp.o CMakeFiles/SusiMachine.dir/src/Mesh.cpp.o CMakeFiles/SusiMachine.dir/src/Object.cpp.o CMakeFiles/SusiMachine.dir/src/Shader.cpp.o CMakeFiles/SusiMachine.dir/src/Texture.cpp.o CMakeFiles/SusiMachine.dir/src/main.cpp.o CMakeFiles/SusiMachine.dir/src/notsure.cpp.o | /opt/homebrew/Cellar/glfw/3.4/lib/libglfw.3.dylib
+build SusiMachine: CXX_EXECUTABLE_LINKER__SusiMachine_Debug CMakeFiles/SusiMachine.dir/lib/Glad/src/glad.c.o CMakeFiles/SusiMachine.dir/src/Camera.cpp.o CMakeFiles/SusiMachine.dir/src/Light.cpp.o CMakeFiles/SusiMachine.dir/src/Material.cpp.o CMakeFiles/SusiMachine.dir/src/Mesh.cpp.o CMakeFiles/SusiMachine.dir/src/Model.cpp.o CMakeFiles/SusiMachine.dir/src/Object.cpp.o CMakeFiles/SusiMachine.dir/src/Shader.cpp.o CMakeFiles/SusiMachine.dir/src/Texture.cpp.o CMakeFiles/SusiMachine.dir/src/main.cpp.o CMakeFiles/SusiMachine.dir/src/notsure.cpp.o | /opt/homebrew/Cellar/glfw/3.4/lib/libglfw.3.dylib /Users/Susi/Documents/Engine/lib/assimp/5.4.3/lib/libassimp.dylib
   FLAGS = -DAPPLE -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4
-  LINK_LIBRARIES = /opt/homebrew/Cellar/glfw/3.4/lib/libglfw.3.dylib
+  LINK_LIBRARIES = /opt/homebrew/Cellar/glfw/3.4/lib/libglfw.3.dylib  /Users/Susi/Documents/Engine/lib/assimp/5.4.3/lib/libassimp.dylib
   OBJECT_DIR = CMakeFiles/SusiMachine.dir
   POST_BUILD = :
   PRE_LINK = :

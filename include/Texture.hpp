@@ -9,10 +9,11 @@ namespace Machine {
 	private:
 		GLuint id;
 		int size;
-		GLenum myType;
 		GLint textureUnit;
 
 	public:
+		GLenum myType;
+
 		Texture(const char* path, GLenum type, GLint texture_Unit, bool flip);
 		void Bind();
 
